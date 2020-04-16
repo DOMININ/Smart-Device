@@ -1,0 +1,111 @@
+.page-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.page-footer__logo {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 46px;
+  margin-bottom: 26px;
+  width: 216px;
+  align-items: center;
+}
+
+.page-footer__logo-text {
+  margin-left: 16px;
+
+  & p:first-child {
+    margin: 0;
+    font-family: "Roboto Condensed", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 29px;
+    color: #203c42;
+  }
+
+  & p:last-child {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #788891;
+  }
+}
+
+.page-footer__created {
+  margin: 0;
+  margin-bottom: 31px;
+  font-family: "PT Mono", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #1b2d37;
+  opacity: 0.5;
+  text-align: center;
+}
+
+.page-footer__social-list {
+  margin: 0 auto;
+  margin-bottom: 54px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  width: 112px;
+  justify-content: space-between;
+}
+
+.page-footer__accordion {
+  & input {
+    display: none;
+  }
+
+  & p {
+    margin: 0;
+    padding-left: 15px;
+    padding-bottom: 23px;
+    font-family: "PT Mono", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+    color: #1b2d37;
+    opacity: 0.5;
+    width: 235px;
+  }
+
+  & label {
+    padding-left: 15px;
+    padding-top: 29px;
+    padding-bottom: 28px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #1b2d37;
+  }
+}
+
+.page-footer__accordion-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  & .page-footer__accordion-item:first-child {
+    border-top: 1px solid #cdcdcd;
+  }
+}
+
+.page-footer__accordion-item {
+  border-bottom: 1px solid #cdcdcd;
+}
