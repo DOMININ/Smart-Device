@@ -5,6 +5,7 @@
   padding: 17px;
   padding-right: 15px;
   background-color: #1b2d37;
+  flex: 0 0 auto;
 }
 
 @media (min-width: 768px) {
@@ -17,8 +18,6 @@
 @media (min-width: 1024px) {
   .page-header {
     padding-top: 33px;
-    max-width: 1400px;
-    margin: 0 auto;
   }
 }
 
