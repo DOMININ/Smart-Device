@@ -4,8 +4,9 @@
   align-items: center;
   padding: 17px;
   padding-right: 15px;
-  background-color: #1b2d37;
+  padding-bottom: 0;
   flex: 0 0 auto;
+  z-index: 1;
 }
 
 @media (min-width: 768px) {
