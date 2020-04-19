@@ -131,6 +131,18 @@
 }
 
 .page-footer__accordion {
+  & details[open] h3 {
+    &::before {
+      display: none;
+    }
+  }
+
+  & details[open] p {
+    animation-name: invisiblyGrowFontSize, fadeIn;
+    animation-duration: 150ms, 100ms;
+    animation-delay: 0ms, 150ms;
+  }
+
   & summary::-webkit-details-marker {
     display: none;
   }
@@ -252,6 +264,31 @@
   }
 }
 
+.page-footer__accordion-divide {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 1px;
+    background-color: #c4c4c4;
+    right: 17px;
+    top: 50%;
+    transform: rotate(90deg);
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 1px;
+    background-color: #c4c4c4;
+    right: 17px;
+    top: 50%;
+  }
+}
+
 @media (min-width: 1024px) {
   .page-footer__about {
     border: none;
@@ -341,5 +378,27 @@
   .law-desktop,
   .created-desktop {
     display: block;
+  }
+}
+
+@keyframes invisiblyGrowFontSize {
+  0% {
+    font-size: 0;
+    opacity: 0;
+  }
+
+  100% {
+    font-size: 15px;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
