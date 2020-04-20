@@ -194,16 +194,16 @@
   }
 }
 
-.consultation__button-tablet {
+.page-main__button-tablet {
   display: none;
 }
 
 @media (min-width: 768px) {
-  .consultation__button-mobile {
+  .page-main__button-mobile {
     display: none;
   }
 
-  .consultation__button-tablet {
+  .page-main__button-tablet {
     display: block;
   }
 }

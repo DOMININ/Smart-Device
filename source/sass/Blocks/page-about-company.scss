@@ -1,0 +1,90 @@
+.about-company {
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .about-company {
+    position: relative;
+    padding-right: 25px;
+    padding-left: 213px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url("../img/year-tablet@2x.png");
+      background-size: 245px auto;
+      width: 252px;
+      height: 362px;
+      top: 0;
+      left: 0;
+    }
+  }
+}
+
+.about-company__title {
+  margin: 0;
+  padding-bottom: 19px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 140.62%;
+  color: #666666;
+}
+
+.about-company__text-first,
+.about-company__text-second {
+  margin: 0;
+  font-family: "PT Mono", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #666666;
+}
+
+.about-company__text-first {
+  padding-bottom: 40px;
+}
+
+.about-company__text-second {
+  padding-bottom: 37px;
+}
+
+.about-company__text-second-desktop {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .about-company__text-second-desktop {
+    display: inline;
+  }
+}
+
+.about-company__detail {
+  margin-bottom: 65px;
+  padding-top: 15px;
+  padding-bottom: 12px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #00b2ff;
+  width: 180px;
+  border: 1px solid #00b2ff;
+  border-radius: 5px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .about-company__detail {
+    margin-bottom: 83px;
+  }
+}
