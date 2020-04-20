@@ -1,0 +1,319 @@
+.services {
+  padding-top: 53px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 64px;
+  background-color: #1b2d37;
+}
+
+@media (min-width: 768px) {
+  .services {
+    padding-top: 53px;
+    padding-left: 26px;
+    padding-right: 29px;
+    padding-bottom: 78px;
+  }
+}
+
+@media (min-width: 768px) {
+  .services {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+.services__title {
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-bottom: 37px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 140.62%;
+  color: #ffffff;
+  width: 280px;
+}
+
+@media (min-width: 768px) {
+  .services__title {
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 113px;
+    width: 602px;
+    font-size: 29px;
+    line-height: 140.62%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .services__title {
+    width: 817px;
+  }
+}
+
+.services__list {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: #ffffff;
+  width: 290px;
+}
+
+@media (min-width: 768px) {
+  .services__list {
+    margin: 0 auto;
+    width: 715px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .services__list {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1170px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+
+.services__item {
+  margin-bottom: 30px;
+  width: 290px;
+  min-height: 256px;
+
+  &:first-child {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      right: 0;
+      top: 0;
+      background-image: url("../img/production-mobile@2x.png");
+      background-size: 291px auto;
+      background-repeat: no-repeat;
+      width: 290px;
+      height: 256px;
+      opacity: 0.2;
+      z-index: 0;
+    }
+  }
+
+  &:nth-child(2) {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 0;
+      right: 0;
+      background-image: url("../img/mounting-mobile@2x.png");
+      background-size: cover;
+      background-position: 50%;
+      background-repeat: no-repeat;
+      width: 290px;
+      height: 256px;
+      opacity: 0.2;
+    }
+  }
+
+  &:last-child {
+    position: relative;
+    margin-bottom: 0;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 0;
+      right: 0;
+      background-image: url("../img/component-mobile@2x.png");
+      background-size: cover;
+      background-position: 50%;
+      background-repeat: no-repeat;
+      width: 290px;
+      height: 256px;
+      opacity: 0.2;
+    }
+  }
+
+  p {
+    position: absolute;
+    margin: 0;
+    padding-top: 23px;
+    padding-left: 35px;
+    width: 176px;
+    z-index: 1;
+  }
+
+  a {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-decoration: none;
+    color: #ffffff;
+    padding-left: 32px;
+    padding-right: 31px;
+    padding-top: 32px;
+    padding-bottom: 31px;
+    background-color: #00b2ff;
+    z-index: 1;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 30px;
+      right: 28px;
+      width: 7px;
+      height: 1px;
+      background-color: #ffffff;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 34px;
+      right: 28px;
+      width: 7px;
+      height: 1px;
+      background-color: #ffffff;
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .services__item {
+    width: 715px;
+    font-size: 20px;
+
+    &:first-child {
+      position: relative;
+
+      &::after {
+        position: absolute;
+        content: "";
+        right: 0;
+        top: 0;
+        background-image: url("../img/production-tablet@2x.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 715px;
+        height: 256px;
+        opacity: 0.2;
+        z-index: 0;
+      }
+    }
+
+    &:nth-child(2) {
+      position: relative;
+
+      &::after {
+        position: absolute;
+        content: "";
+        top: 0;
+        right: 0;
+        background-image: url("../img/mounting-tablet@2x.png");
+        background-size: cover;
+        background-position: 53%;
+        background-repeat: no-repeat;
+        width: 715px;
+        height: 256px;
+        opacity: 0.2;
+      }
+    }
+
+    &:last-child {
+      position: relative;
+      margin-bottom: 0;
+
+      &::after {
+        position: absolute;
+        content: "";
+        top: 0;
+        right: 0;
+        background-image: url("../img/component-tablet@2x.png");
+        background-size: cover;
+        background-position: 50%;
+        background-repeat: no-repeat;
+        width: 715px;
+        height: 256px;
+        opacity: 0.2;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .services__item {
+    width: 370px;
+    min-height: 620px;
+    font-size: 20px;
+
+    &:first-child {
+      position: relative;
+
+      &::after {
+        position: absolute;
+        content: "";
+        right: 0;
+        top: 0;
+        background-image: url("../img/production-desktop@2x.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 370px;
+        height: 620px;
+        opacity: 0.2;
+        z-index: 0;
+      }
+    }
+
+    &:nth-child(2) {
+      position: relative;
+
+      &::after {
+        position: absolute;
+        content: "";
+        top: 0;
+        right: 0;
+        background-image: url("../img/mounting-desktop@2x.png");
+        background-size: cover;
+        background-position: 53%;
+        background-repeat: no-repeat;
+        width: 370px;
+        height: 620px;
+        opacity: 0.2;
+      }
+    }
+
+    &:last-child {
+      position: relative;
+      margin-bottom: 30px;
+
+      &::after {
+        position: absolute;
+        content: "";
+        top: 0;
+        right: 0;
+        background-image: url("../img/component-desktop@2x.png");
+        background-size: cover;
+        background-position: 50%;
+        background-repeat: no-repeat;
+        width: 370px;
+        height: 620px;
+        opacity: 0.2;
+      }
+    }
+
+    p {
+      padding-top: 53px;
+      padding-left: 44px;
+    }
+  }
+}
