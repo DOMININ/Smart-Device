@@ -1,7 +1,7 @@
 .page-main {
   flex: 1 0 auto;
   margin-top: -230px;
-  background: url("../../img/background-mobile@2x.png") no-repeat;
+  background: url("../img/background-mobile@2x.png") no-repeat;
   background-size: 1350px auto;
   background-position: 55% 0;
   background-color: #1b2d37;
@@ -11,7 +11,7 @@
 @media (min-width: 768px) {
   .page-main {
     margin-top: -275px;
-    background: url("../../img/background-tablet@2x.png") no-repeat;
+    background: url("../img/background-tablet@2x.png") no-repeat;
     background-size: 1500px auto;
     background-position: 49% 0;
   }
@@ -20,7 +20,7 @@
 @media (min-width: 1024px) {
   .page-main {
     margin-top: -179px;
-    background: url("../../img/background-desktop@2x.png") no-repeat;
+    background: url("../img/background-desktop@2x.png") no-repeat;
     background-size: 1900px auto;
     background-position: 49% 0;
   }
@@ -67,7 +67,7 @@
     right: -23px;
     width: 301px;
     height: 220px;
-    background: url("../../img/board-mobile@2x.png") no-repeat;
+    background: url("../img/board-mobile@2x.png") no-repeat;
     background-size: 301px 220px;
     z-index: -1;
   }
@@ -90,7 +90,7 @@
       right: -409px;
       width: 465px;
       height: 340px;
-      background: url("../../img/board-tablet@2x.png") no-repeat;
+      background: url("../img/board-tablet@2x.png") no-repeat;
       background-size: 465px 340px;
     }
   }
@@ -111,7 +111,7 @@
       right: -545px;
       width: 705px;
       height: 515px;
-      background: url("../../img/board-desktop@2x.png") no-repeat;
+      background: url("../img/board-desktop@2x.png") no-repeat;
       background-size: 705px 515px;
     }
   }
